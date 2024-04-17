@@ -1,0 +1,4 @@
+keys.txt
+.env
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
