@@ -10,5 +10,7 @@ google patents public data
 ### apis -> hdfs -> hive/hbase -> models
 
 ![alt text](CloudArchitecture.png "pipeline")
+## beginning db model wip
+![alt text](db_model.png "dbmodel")
 
 
