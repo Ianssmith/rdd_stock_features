@@ -1,16 +1,14 @@
-#structure
-    datasources:
-    openexchange/alphavantage
-    google bigquery public patents
-    |
-    V
-    spark/scala ingestion -> HDFS/Hive -> spark/scala
-                                                |
-                                                V
-                                                Tableau/PowerBI/D3.js
+# S&P500 and Forex models
 
+## data sources
 Open exchange rates api
     1000 free requests per month
+alphavantage api
+    25 requests per day
 google patents public data
+## Flow 
+### apis -> hdfs -> hive/hbase -> models
+
+![alt text](CloudArchitecture.png "pipeline")
 
 
