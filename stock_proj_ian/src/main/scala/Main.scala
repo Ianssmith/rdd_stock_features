@@ -16,7 +16,6 @@ object Main {
     val filename = ".env"
 
 
-
     // Open the file and read its content
     val bufferedSource = Source.fromFile(filename)
     // Read lines from the file
@@ -33,6 +32,17 @@ object Main {
 
     val filePath = "data/INTC.json"
     val content = response.body
+
+    val sparkconf= new SparkConf()
+    sparkconf.set("spark.app.name", "order_task")
+    sparkconf.set("spark.master","local[1]")
+    val spark = SparkSession.builder().config(sparkconf).getOrCreate()
+
+    val df = spark.read.json(content)
+    df.write.mode("overwrite").json("/user/ec2-user/UKUSMarHDFS/ian")
+    //val df = spark.read.json("/local/path/to/json/file.json")
+    //df.write.mode("overwrite").json("/hdfs/path/")
+
 
     val file = new File(filePath)
     val bw = new BufferedWriter(new FileWriter(file))

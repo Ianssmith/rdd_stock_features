@@ -12,7 +12,7 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.3"
 //libraryDependencies += "org.apache.spark" %% "spark-streaming" % "2.4.3"
 // https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-client
 //libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.1"
-libraryDependencies += "org.scalaj" %% "scalaj-http" % "2.4.2"
+libraryDependencies += "org.scalaj" %% "scalaj-http" % "2.3.0"
 
 
 lazy val root = (project in file("."))
