@@ -70,4 +70,4 @@ for i in dfs:
     #write to parquet file on hdfs
     #df_spark.write.parquet(f'./data/{i[1]}.parquet',  mode='append')
     #df_spark.write.parquet(f'/user/ec2-user/UKUSMarHDFS/ian/{i[1]}.parquet',  mode='append')
-    #df_spark.write.save(f'/user/ec2-user/UKUSMarHDFS/ian/{i[1]}.parquet', format='parquet', mode='append')
+    df_spark.write.save(f'/user/ec2-user/UKUSMarHDFS/ian/{i[1]}.json', format='json', mode='append')
