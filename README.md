@@ -13,4 +13,7 @@ google patents public data
 ## beginning db model wip
 ![alt text](db_model.png "dbmodel")
 
+## api to hdfs ingestion
+![alt text](ingest_av_api_hdfs.png "hdfs_ingestion")
+
 
