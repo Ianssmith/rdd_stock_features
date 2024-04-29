@@ -45,14 +45,15 @@ def get_from_alphav(start,stop):
         #again index 0 is data index 1 is data symbol
         dfs.append([fdf,i[1]])
         #write api calls to json file incase sparksession hdfs write does not work
-        with open(f'./data/{i[1]}.json', 'w') as outfile:
-            outfile.write(str(i[0].json()))
+        fdf.to_json(f'./data/{i[1]}.json',orient="split",compression='infer',index=True)
+        #with open(f'./data/{i[1]}.json', 'w') as outfile:
+            #outfile.write(str(i[0].json()))
     return dfs
 
 #call to get data from api
 dfs = []
 #dfs = get_from_alphav(3,4)
-pdf = pd.read_json('./data/ABT.json', lines=True)
+pdf = pd.read_json('./data/ABBV.json', lines=True)
 print(pdf)
 dfs.append(pdf)
 
