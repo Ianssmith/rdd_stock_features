@@ -45,14 +45,14 @@ def get_from_alphav(start,stop):
         #again index 0 is data index 1 is data symbol
         dfs.append([fdf,i[1]])
         #write api calls to json file incase sparksession hdfs write does not work
-        fdf.to_json(f'./data/{i[1]}.json',orient="split",compression='infer',index=True)
+        fdf.to_csv(f'./data/{i[1]}.csv',index=False)
         #with open(f'./data/{i[1]}.json', 'w') as outfile:
             #outfile.write(str(i[0].json()))
     return dfs
 
 #call to get data from api
 dfs = []
-dfs = get_from_alphav(4,5)
+dfs = get_from_alphav(5,6)
 #pdf = pd.read_json('./data/ABBV.json', lines=True)
 #print(pdf)
 #dfs.append(pdf)
@@ -72,5 +72,5 @@ for i in dfs:
     #df_spark.write.parquet(f'./data/{i[1]}.parquet',  mode='append')
     #df_spark.write.parquet(f'/user/ec2-user/UKUSMarHDFS/ian/{i[1]}.parquet',  mode='append')
     
-    df_spark.write.save(f'hdfs://ip-172-31-3-80.eu-west-2.compute.internal:8020/user/ec2-user/UKUSMarHDFS/ian/proj/data/{i[1]}.json', format='json', mode='append')
+    df_spark.write.save(f'hdfs://ip-172-31-3-80.eu-west-2.compute.internal:8020/user/ec2-user/UKUSMarHDFS/ian/proj/data/{i[1]}.csv', format='csv', mode='append')
     #df_spark.write.save(f'hdfs://localhost:8020/user/ec2-user/UKUSMarHDFS/ian/proj/data/{i[1]}.json', format='json', mode='append')

@@ -16,4 +16,5 @@ google patents public data
 ## api to hdfs ingestion
 ![alt text](ingest_av_api_hdfs.png "hdfs_ingestion")
 
-
+## external hive table from hdfs 
+![alt text](hive_table.png "external hive table")
