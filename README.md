@@ -18,3 +18,12 @@ google patents public data
 
 ## external hive table from hdfs 
 ![alt text](hive_table.png "external hive table")
+
+## jenkins build triggers
+### one to periodically query data from the api
+![alt text](cron_trigger.png "cron build trigger")
+### one following the api query build trigger
+![alt text](model_trigger.png "model build trigger")
+
+### Some basic feature enhancement and visualization
+![alt text](basic_feature_nplot.png "year column/pricechart")
