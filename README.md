@@ -27,3 +27,6 @@ google patents public data
 
 ### Some basic feature enhancement and visualization
 ![alt text](basic_feature_nplot.png "year column/pricechart")
+
+## Simple regression model results to predict 2023 prices
+![alt text](regression.png "prediction results")
