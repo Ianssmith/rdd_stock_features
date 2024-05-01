@@ -9,7 +9,7 @@ google patents public data
 ## Flow 
 ### apis -> hdfs -> hive/hbase -> models
 
-[<img src="CloudArchitecture.png">](https://link-to-your-URL/)
+[<img src="./imgs/CloudArchitecture.png">](https://link-to-your-URL/)
 ## beginning db model wip
 [<img src="./imgs/db_model.png">](https://link-to-your-URL/)
 
