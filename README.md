@@ -9,24 +9,24 @@ google patents public data
 ## Flow 
 ### apis -> hdfs -> hive/hbase -> models
 
-![alt text](CloudArchitecture.png "pipeline")
+[<img src="CloudArchitecture.png">](https://link-to-your-URL/)
 ## beginning db model wip
-![alt text](db_model.png "dbmodel")
+[<img src="./imgs/db_model.png">](https://link-to-your-URL/)
 
 ## api to hdfs ingestion
-![alt text](ingest_av_api_hdfs.png "hdfs_ingestion")
+[<img src="./imgs/ingest_av_api_hdfs.png">](https://github.com/Ianssmith/rdd_stock_features/blob/master/alphav.py)
 
 ## external hive table from hdfs 
-![alt text](hive_table.png "external hive table")
+[<img src="./imgs/hive_table.png">](https://github.com/Ianssmith/rdd_stock_features/blob/master/in_hbase.py)
 
 ## jenkins build triggers
 ### one to periodically query data from the api
-![alt text](cron_trigger.png "cron build trigger")
+[<img src="./imgs/cron_trigger.png">](https://link-to-your-URL/)
 ### one following the api query build trigger
-![alt text](model_trigger.png "model build trigger")
+[<img src="./imgs/model_trigger.png">](https://link-to-your-URL/)
 
 ### Some basic feature enhancement and visualization
-![alt text](basic_feature_nplot.png "year column/pricechart")
+[<img src="./imgs/basic_feature_nplot.png">](https://github.com/Ianssmith/rdd_stock_features/blob/master/model.py)
 
 ## Simple regression model results to predict 2023 prices
-![alt text](regression.png "prediction results")
+[<img src="./imgs/regression.png">](https://github.com/Ianssmith/rdd_stock_features/blob/master/model.py)
